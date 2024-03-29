@@ -1,8 +1,13 @@
-class Train:
-    def __init__(self, capacity = 50):
+class Train:           #Two classs are definded in this program one is class Train ......... 
+    #Tha contain capacity , passengers, waiting_list
+    def __init__(self, capacity = 5):
         self.capacity = capacity
         self.passengers = []
         self.waiting_list = []
+
+        # Attributes and methods of the classes are encapsulated within their respective classes.
+        #  For example, capacity, passengers,
+        #  and waiting_list are encapsulated within the Train class.
     
     def book_ticket(self, passenger):
         if ( len(self.passengers) < self.capacity):
@@ -33,7 +38,7 @@ class Train:
 
 
     
-class Passenger:
+class Passenger:    # Another class is Passengers that contain passenger name Attributes
     def __init__(self, name):
         self.name = name
 
